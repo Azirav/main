@@ -1,1 +1,4 @@
-sosihui scripta nety ya ydalil
+-- sosihui scripta nety ya ydalil
+
+local pl = game.Players.LocalPlayer
+pl:Kick()

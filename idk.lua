@@ -1,13 +1,3 @@
-local s = Instance.new("Tool", workspace)
-local q = Instance.new("ModuleScript", workspace)
-local w = Instance.new("ModuleScript", workspace)
-local p = Instance.new("ModuleScript", workspace)
-p.Name = "GoreEffect"
-q.Name = "IgniteScript"
-w.Name = "IcifyScript"
-s.Name = "Pistol"
-
-
 local args = {
     [1] = {
         [1] = "HumanoidPenetration",
@@ -408,15 +398,15 @@ local args = {
         ["CrossSize"] = 0,
         ["SwitchTime"] = 0.25
     },
-    [2] = s,
+    [2] = game:GetService("Players").LocalPlayer:WaitForChild("Pistol"),
     [3] = game:GetService("Players").LocalPlayer,
-    [4] = game:GetService("Players"):WaitForChild("mamaeb1987").Character.Humanoid,
-    [5] = game:GetService("Players"):WaitForChild("mamaeb1987").Character.HumanoidRootPart,
+    [4] = game:GetService("Players"):WaitForChild("mamaeb1999").Character.Humanoid,
+    [5] = game:GetService("Players"):WaitForChild("mamaeb1999").Character.HumanoidRootPart,
     [6] = {
         [1] = 20,
         [2] = 2,
         [3] = true,
-        [4] = 20.096332550048828,
+        [4] = 19.923870086669922,
         [5] = true,
         [6] = 20000,
         [7] = 1000
@@ -426,8 +416,8 @@ local args = {
         [2] = 0,
         [3] = false,
         [4] = false,
-        [5] = q,
-        [6] = w,
+        [5] = game:GetService("Players").LocalPlayer:WaitForChild("IgniteScript"),
+        [6] = game:GetService("Players").LocalPlayer:WaitForChild("IcifyScript"),
         [7] = 100,
         [8] = 100
     },
@@ -436,14 +426,14 @@ local args = {
         [2] = 5,
         [3] = 3
     },
-    [9] = game:GetService("Players"):WaitForChild("mamaeb1987").Character.UpperTorso,
+    [9] = game:GetService("Players"):WaitForChild("mamaeb1999").Character.RightLowerArm,
     [10] = {
         [1] = false,
         [2] = {} --[[DUPLICATE]],
         [3] = 1,
         [4] = 1.5,
         [5] = 1,
-        [6] = p,
+        [6] = game:GetService("Players").LocalPlayer:WaitForChild("GoreEffect"),
         [7] = 0
     }
 }
